@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "dependencies": {
+    "firebase": "^10.7.2",
+    "nanoid": "^3.1.28",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-mde": "11.5.0",
+    "react-split": "2.0.13",
+    "showdown": "1.9.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "*",
+    "vite": "^5.2.10"
+  },
+  "scripts": {
+    "start": "vite",
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
