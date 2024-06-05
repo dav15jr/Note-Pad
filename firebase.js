@@ -1,14 +1,13 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection } from "firebase/firestore"
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyAnJLGeX7Ko4zNGJ_6u0dJUrY_jWk8tUiI",
-  authDomain: "note-pad---react.firebaseapp.com",
-  projectId: "note-pad---react",
-  storageBucket: "note-pad---react.appspot.com",
-  messagingSenderId: "549553355051",
-  appId: "1:549553355051:web:9502a18d1943f78a8fed6e"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
