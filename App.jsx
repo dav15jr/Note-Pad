@@ -28,7 +28,7 @@ export default function App() {
                 ...doc.data(),
                 id: doc.id
             }))
-            const sortedNotes = notesArr.slice().sort((a, b) => b.updatedAt - a.updatedAt)
+        const sortedNotes = notesArr.slice().sort((a, b) => b.updatedAt - a.updatedAt)
             setNotes(sortedNotes)
         })
         return unsubscribe
@@ -62,8 +62,6 @@ export default function App() {
     async function updateNote(text) {
         const docRef = doc(db, "notes", currentNoteId)
         await setDoc(docRef, { body: text, updatedAt: Date.now()}, { merge: true })
-        
-    
     }
     
     async  function deleteNote(noteId) {
@@ -97,12 +95,12 @@ export default function App() {
                     </Split>
                     :
                     <div className="no-notes">
-                        <h1>You have no notes</h1>
+                        <h1>You have stored notes.</h1>
                         <button
                             className="first-note"
                             onClick={createNewNote}
                         >
-                        Create one now
+                        Create first note
                         </button>
                     </div>
             }

@@ -26,10 +26,11 @@ button:focus {
 .sidebar {
     width: 20%;
     height: 100vh;
+    min-width: 200px;
 }
 
 .sidebar--note {
-    /* display: flex; */
+    display: flex;
 }
 
 .sidebar--header {
@@ -44,26 +45,37 @@ button:focus {
 
 .new-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #6a19a0;
     border: none;
     color: white;
-    border-radius: 3px;
+    border-radius: 10px;
     height: 30px;
     width: 30px;
+}
+.new-note:hover{
+    background-color: #ffffff;
+    border: 2px solid #7b19a8;
+    color: rgb(91, 2, 151);
 }
 
 .first-note {
     cursor: pointer;
-    background-color: #4A4E74;
+    background-color: #7b19a8;
     border: none;
     color: white;
-    border-radius: 3px;
+    border-radius: 10px;
     padding: 1rem;
+}
+.first-note:hover{
+    background-color: #ffffff;
+    border: 2px solid #7b19a8;
+    color: rgb(91, 2, 151);
 }
 
 .editor {
     width: 80%;
     height: 100vh;
+    min-width: 300px;
 }
 
 .title {
@@ -102,7 +114,7 @@ button:focus {
 }
 
 .selected-note {
-    background-color: #4A4E74;
+    background-color: #780196;
 }
 
 .selected-note .text-snippet {
@@ -167,7 +179,8 @@ button:focus {
         inset 2px 0 0;
     border-bottom-left-radius: 1px;
     border-bottom-right-radius: 1px;
-    margin-top: 4px
+    margin-top: 4px;
+    color:rgb(113, 177, 117);
 }
 
 .gg-trash::after,
